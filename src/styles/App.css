@@ -1,12 +1,48 @@
-h1 {
-    color: #27aedb;
+.App {
+    font-family: sans-serif;
     text-align: center;
-    }
-    
-
-button{
-    color: #27aedb;
-    text-align: center;
+  }
+  .main-container {
+    display: flex;
     justify-content: center;
     align-items: center;
-}
+    width: 100vw;
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 3rem;
+    padding: 15px;
+  }
+  .recipes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 20px;
+    justify-content: center;
+  
+    width: 100%;
+  }
+  .dish {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    border: 2px solid black;
+  }
+  .dish img {
+     float: left; 
+     width:200px;
+     height:auto;
+  }
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+  }
+  .dish-desc p,.recipes-container{
+    text-align:justify;
+  }
+  
