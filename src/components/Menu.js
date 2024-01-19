@@ -94,9 +94,9 @@ export default function Menu() {
 
         <div className="container">
           <button id="main" onClick={() => setCategory("all")}>All</button>
-          <button id="filter-btn-1" onClick={() => setCategory("breakfast")}>BreakFast</button>
-          <button id="filter-btn-2" onClick={() => setCategory("launch")}>Lunch</button>
-          <button id="filter-btn-3" onClick={() => setCategory("shakes")}>Shakes</button>
+          <button id="filter-btn-1" data-test-id="menu-item-breakfast" onClick={() => setCategory("breakfast")}>BreakFast</button>
+          <button id="filter-btn-2" data-test-id="menu-item-lunch" onClick={() => setCategory("launch")}>Lunch</button>
+          <button id="filter-btn-3" data-test-id="menu-item-shakes" onClick={() => setCategory("shakes")}>Shakes</button>
         </div>
 
         <div className="recipes-container">
